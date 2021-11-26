@@ -1,0 +1,146 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body {
+   background-color: #181818;
+   color: white;
+   font-family: Urbanist;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: gray;
+	opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: gray;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: gray;
+}
+
+.ml-2{
+   margin-left: 2rem;
+}
+
+.ml-1{
+   margin-left: 1rem;
+}
+
+.mt-2{
+   margin-top: 2rem;
+}
+
+.mt-1 {
+	margin-top: 1rem;
+}
+
+.mt-05 {
+	margin-top: 0.5rem;
+}
+
+.mb-1{
+   margin-bottom: 1rem;
+}
+
+.mb-05{
+   margin-bottom: 0.5rem;
+}
+
+.mb-2{
+   margin-bottom: 2rem;
+}
+
+.mr-1{
+   margin-right: 1.5rem;
+}
+
+.mr-2{
+   margin-right: 2rem;
+}
+
+.footer {
+	background-color: #121212;
+	height: 3rem;
+	line-height: 3rem;
+}
+
+.code-input {
+	border: none;
+	background-color: #121212;
+	font-family: Urbanist;
+	font-size: 1rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+
+	position: relative;
+	float: left;
+	resize: none;
+	width: 46.5%;
+	height: 500px;
+	color: green;
+	border: 0px;
+	outline: 0px;
+	overflow-y: scroll;
+}
+
+.text-color-white{
+   color: white;
+}
+
+.outin_sections {
+	border: none;
+	background-color: #121212;
+	font-family: Urbanist;
+	font-size: 1rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+
+	position: relative;
+	float: right;
+	resize: none;
+	width: 46.5%;
+	height: 100px;
+	color: green;
+	border: 0px;
+	outline: 0px;
+}
+
+.btn {
+	cursor: pointer;
+
+   border-radius: 0.5rem;
+   padding: 0.5rem;
+   border: none;
+   background-color: #121212;
+   color: white;
+}
+
+.run-btn {
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+.clr-btn {
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+.wikitable {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-color: #121212;
+	
+	width: 100%;
+	color: white;
+	
+	text-align: left;
+	font-family: Urbanist;
+	font-size: 1rem;
+
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}

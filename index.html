@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Fried Chicken IDE (Remastered)</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<center>
+		<h1 class="mt-2 mb-2">Fried Chicken By kenan238, a fork of Chicken.</h1>
+
+		<textarea class="ml-2 code-input" id="code" placeholder="Write some code."></textarea>
+		<textarea id="output" class="outin_sections mr-2" placeholder="(Output)"></textarea>
+		<textarea id="input" class="outin_sections mt-1 mr-2" placeholder="(Input)"></textarea>
+		<textarea id="errors" class="outin_sections mt-1 mr-2 mb-1" placeholder="(Errors)"></textarea>
+		
+		<div id="button_wrapper">
+			<button class="btn run-btn" onclick="run()">Run</button>
+			<button class="btn clr-btn" onmouseover="descriptions('clear')" onclick="reset()">Clear</button>
+			<br>
+			<h3 class="mb-05 mt-1">Examples: </h3>
+			<button class="btn" onmouseover="descriptions('helloworld')" onclick="pasteExample('helloworld')">Hello World</button>
+			<button class="btn" onmouseover="descriptions('quine')" onclick="pasteExample('quine')">Quine</button>
+			<button class="btn" onmouseover="descriptions('cat')" onclick="pasteExample('cat')">Cat</button>
+			<button class="btn" onmouseover="descriptions('99chickens')" onclick="pasteExample('99chickens')">99 Chickens</button>
+			<button class="btn" onmouseover="descriptions('deadfish')" onclick="pasteExample('deadfish')">Deadfish</button>
+		</div>
+		
+		<p class="mt-05" style="color: grey" id="example_description">Description</p>
+	</center>
+
+	<article class="ml-2 mt-2">
+		<div style="font-weight: 600;">
+			You can write chicken and fried randomly. "fried chicken" is same as "chicken chicken" or "chicken fried".
+			<br>But you have to put atleast 3 frieds in your code.
+		</div>
+
+		<br>
+
+		<h1>Chicken specification</h1>
+		<p>Every line in the program is inspected for chickens, and the corresponding number of chickens are
+			pushed onto the stack. Execution is done directly on the stack, which may make the program
+			susceptible to arbitrary chicken injection attacks.
+		</p>
+
+		<br>
+
+		<h2>Instructions</h2>
+		<table class="wikitable">
+			<tbody>
+				<tr>
+					<th>Opcode</th>
+					<th>Name</th>
+					<th>Name (chicken)</th>
+					<th>Description</th>
+				</tr>
+
+				<tr>
+					<td>
+						<code>0</code>
+					</td>
+					<td>exit</td>
+					<td>axe</td>
+					<td>Stop execution.</td>
+				</tr>
+
+				<tr>
+					<td>
+						<code>1</code>
+					</td>
+					<td>chicken</td>
+					<td>chicken</td>
+					<td>Push the string "chicken" onto the stack.</td>
+				</tr>
+
+				<tr>
+					<td>
+						<code>2</code>
+					</td>
+					<td>add</td>
+					<td>add</td>
+					<td>Add two top stack values.</td>
+				</tr>
+
+				<tr>
+					<td>
+						<code>3</code>
+					</td>
+					<td>subtract</td>
+					<td>fox</td>
+					<td>Subtract two top stack values.
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<code>4</code>
+					</td>
+					<td>multiply</td>
+					<td>rooster</td>
+					<td>Multiply two top stack values.</td>
+				</tr>
+
+				<tr>
+					<td>
+						<code>5</code>
+					</td>
+					<td>compare</td>
+					<td>compare</td>
+					<td>Compare two top stack values for equality, push truthy or falsy result onto the stack.</td>
+				</tr>
+				<tr>
+					<td>
+						<code>6</code>
+					</td>
+					<td>load</td>
+					<td>pick</td>
+					<td>Double wide instruction. Next instruction indicates source to load from. 0 loads from stack, 1 loads from user input. Top of stack points to address/index to load onto stack.</td>
+				</tr>
+				<tr>
+					<td>
+						<code>7</code>
+					</td>
+					<td>store</td>
+					<td>peck</td>
+					<td>Top of stack points to address/index to store to. The value below that will be popped and stored.</td>
+				</tr>
+				<tr>
+					<td>
+						<code>8</code>
+					</td>
+					<td>jump</td>
+					<td>fr</td>
+					<td>Top of stack is a relative offset to jump to. The value below that is the condition. Jump only happens if condition is truthy.</td>
+				</tr>
+				<tr>
+					<td>
+						<code>9</code>
+					</td>
+					<td>char</td>
+					<td>BBQ</td>
+					<td>Interprets the top of the stack as ascii and pushes the corresponding character.</td>
+				</tr>
+				<tr>
+					<td>
+						<code>10+</code>
+					</td>
+					<td>push</td>
+					<td></td>
+					<td>Pushes the literal number n-10 onto the stack.</td>
+				</tr>
+			</tbody>
+		</table>
+	</article>
+
+	<br>
+	<div class="ml-2">To learn more about the original "Chicken" language, <a href="https://esolangs.org/wiki/Chicken" class="text-color-white" target="_blank">click here.</a></div>
+	
+	<div class="footer mt-2">
+		<div class="copyright ml-2">Copyright 2021 © Made by kenan238, edited by <a class="text-color-white" href="https://www.sarptekbas.codes/en/" target="_blank">sarp.</a></div>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
