@@ -431,8 +431,10 @@ chicken chicken chicken chicken chicken chicken chicken chicken`;
 }
 function run() {
 	var chicken = friedChicken(document.getElementById("input").value, document.getElementById("code").value);
-	if(chicken.startsWith("Error"))
-		document.getElementById("errors").innerHTML = chicken;
+	try {
+		if(chicken.startsWith("Error"))
+			document.getElementById("errors").innerHTML = chicken;
+	} catch(err) { console.log("Failed to check if error"); }
 	else
 		document.getElementById("output").innerHTML = chicken;
 }
