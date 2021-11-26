@@ -71,13 +71,13 @@ function interpreter(FRIEDCHICKEN, Friedchicken) {
 	}
 	if(occurences(Friedchicken, "fried", false) < 3)
 		return "Error: put more 'fried' in your code."
-	}
 	Friedchicken=Friedchicken.replace(/fried/g, "chicken")
 	return chicken(FRIEDCHICKEN, Friedchicken)
 }
 /* Interpreter */
+
 function friedChicken(inp, code) {
-	try {
+	try{
 		var v=interpreter(inp, code);
 		var convert = (s) => {
 			let obj=document.createElement("P");
@@ -101,7 +101,7 @@ function descriptions(name) {
 function pasteExample(name) {
 	var codearea = document.getElementById("code");
 	if(name == "helloworld") {
-	codearea.value = `chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken
+		codearea.value = `chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken
 chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken
 chicken fried chicken chicken
 chicken chicken chicken fried chicken chicken chicken chicken chicken
@@ -163,17 +163,17 @@ chicken chicken chicken fried chicken chicken
 `;
 	}
 	if(name == "quine") {
-	codearea.value = `fried`;
+		codearea.value = `fried`;
 	}
 	if(name == "cat") {
 		document.getElementById("input").value = "Chicken kfc.";
-	codearea.value = `chicken fried chicken fried chicken fried chicken chicken fried chicken chicken
+		codearea.value = `chicken fried chicken fried chicken fried chicken chicken fried chicken chicken
 chicken fried chicken chicken fried chicken
 `;
 	}
 	if(name == "99chickens") {
 		document.getElementById("input").value = "9";
-	codearea.value = `chicken fried chicken chicken chicken chicken fried chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken
+		codearea.value = `chicken fried chicken chicken chicken chicken fried chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken
 chicken chicken chicken chicken chicken chicken fried chicken chicken chicken fried chicken chicken chicken
 chicken chicken chicken fried
 chicken chicken fried chicken chicken chicken chicken chicken chicken
@@ -284,7 +284,7 @@ chicken chicken fried chicken chicken chicken chicken chicken
 	}
 	if(name == "deadfish") {
 		document.getElementById("input").value = "issiso";
-	codearea.value = `chicken fried chicken chicken chicken chicken chicken chicken chicken chicken
+		codearea.value = `chicken fried chicken chicken chicken chicken chicken chicken chicken chicken
 chicken chicken chicken chicken chicken chicken
 chicken chicken
 chicken fried chicken chicken chicken fried chicken chicken chicken chicken
@@ -423,7 +423,7 @@ chicken chicken chicken chicken chicken chicken chicken fried chicken chicken
 chicken chicken chicken chicken chicken fried chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken fried chicken chicken chicken chicken chicken fried chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken fried chicken fried chicken chicken chicken fried chicken chicken fried chicken chicken chicken chicken fried chicken fried chicken fried chicken chicken chicken fried chicken chicken fried chicken chicken fried chicken chicken chicken fried chicken fried chicken chicken chicken chicken chicken chicken fried chicken chicken chicken chicken chicken chicken fried chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken
 chicken chicken chicken
 chicken chicken chicken chicken chicken chicken chicken chicken`;
-}
+	}
 }
 function run() {
 	var chicken = friedChicken(document.getElementById("input").value, document.getElementById("code").value);
