@@ -1,5 +1,9 @@
 /* Interpreter */
 function interpreter(FRIEDCHICKEN, Friedchicken) {
+	/*
+	 * FRIEDCHICKEN: arguments
+	 * Friedchicken: code
+	**/
 	const chicken = (CHICKEN, Chicken) => {
 		Chicken &&( chicken. chicken =[,
 		CHICKEN, CHICKEN = Chicken = chicken.
@@ -78,16 +82,16 @@ function interpreter(FRIEDCHICKEN, Friedchicken) {
 
 function friedChicken(inp, code) {
 	try{
-		var v=interpreter(inp, code);
+		var res=interpreter(inp, code);
 		var convert = (s) => {
 			let obj=document.createElement("P");
 			obj.innerHTML=s;
 			return obj.textContent;
 		};
-		v=convert(v);
+		res=convert(res);
 
-	} catch(e) { v=e; }
-	return v;
+	} catch(e) { res=e; }
+	return res;
 }
 function descriptions(name) {
 	var desc = document.getElementById("example_description");
