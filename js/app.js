@@ -69,7 +69,7 @@ function interpreter(FRIEDCHICKEN, Friedchicken) {
 		}
 		return n;
 	}
-	if(occurences(Friedchicken, "fried", false) < 3)
+	if(occurences(Friedchicken, "fried", false) < 1)
 		return "Error: put more 'fried' in your code."
 	Friedchicken=Friedchicken.replace(/fried/g, "chicken")
 	return chicken(FRIEDCHICKEN, Friedchicken)
