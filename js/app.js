@@ -70,21 +70,21 @@ const occurences = (string, subString, allowOverlapping) => {
 }
 if(occurences(Friedchicken, "fried", false) < 3)
 	return "Error: put more 'fried' in your code."
-Friedchicken=Friedchicken.replace(/fried/g, "chicken")
-return chicken(FRIEDCHICKEN, Friedchicken)
+	Friedchicken=Friedchicken.replace(/fried/g, "chicken")
+	return chicken(FRIEDCHICKEN, Friedchicken)
 }
 function friedChicken(inp, code) {
-try{
-	var v=interpreter(inp, code);
-	var convert = (s) => {
-		let obj=document.createElement("P");
-		obj.innerHTML=s;
-		return obj.textContent;
-	};
-	v=convert(v);
+	try {
+		var v=interpreter(inp, code);
+		var convert = (s) => {
+			let obj=document.createElement("P");
+			obj.innerHTML=s;
+			return obj.textContent;
+		};
+		v=convert(v);
 
-} catch(e) { v=e; }
-return v;
+	} catch(e) { v=e; }
+	return v;
 }
 function descriptions(name) {
 	var desc = document.getElementById("example_description");
@@ -96,8 +96,8 @@ function descriptions(name) {
 	if(name == "clear") desc.textContent = "Clears all the input/output.";
 }
 function pasteExample(name) {
-var codearea = document.getElementById("code");
-if(name == "helloworld") {
+	var codearea = document.getElementById("code");
+	if(name == "helloworld") {
 	codearea.value = `chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken
 chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken
 chicken fried chicken chicken
@@ -158,18 +158,18 @@ chicken chicken chicken chicken chicken chicken chicken chicken
 chicken fried chicken fried chicken chicken chicken chicken chicken chicken chicken
 chicken chicken chicken fried chicken chicken
 `;
-}
-if(name == "quine") {
+	}
+	if(name == "quine") {
 	codearea.value = `fried`;
-}
-if(name == "cat") {
-	document.getElementById("input").value = "Chicken kfc.";
+	}
+	if(name == "cat") {
+		document.getElementById("input").value = "Chicken kfc.";
 	codearea.value = `chicken fried chicken fried chicken fried chicken chicken fried chicken chicken
 chicken fried chicken chicken fried chicken
 `;
-}
-if(name == "99chickens") {
-	document.getElementById("input").value = "9";
+	}
+	if(name == "99chickens") {
+		document.getElementById("input").value = "9";
 	codearea.value = `chicken fried chicken chicken chicken chicken fried chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken chicken
 chicken chicken chicken chicken chicken chicken fried chicken chicken chicken fried chicken chicken chicken
 chicken chicken chicken fried
@@ -278,9 +278,9 @@ chicken chicken fried chicken chicken chicken chicken fried chicken fried chicke
 chicken chicken chicken
 chicken chicken fried chicken chicken chicken chicken chicken
 `;
-}
-if(name == "deadfish") {
-	document.getElementById("input").value = "issiso";
+	}
+	if(name == "deadfish") {
+		document.getElementById("input").value = "issiso";
 	codearea.value = `chicken fried chicken chicken chicken chicken chicken chicken chicken chicken
 chicken chicken chicken chicken chicken chicken
 chicken chicken
