@@ -434,9 +434,9 @@ function run() {
 	try {
 		if(chicken.startsWith("Error"))
 			document.getElementById("errors").innerHTML = chicken;
+		else
+			document.getElementById("output").innerHTML = chicken;
 	} catch(err) { console.log("Failed to check if error"); }
-	else
-		document.getElementById("output").innerHTML = chicken;
 }
 
 function reset() {
